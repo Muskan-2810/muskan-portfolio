@@ -4,10 +4,16 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { X, ShieldCheck } from "lucide-react";
 import OrgMark from "@/components/ui/OrgMark";
-import type { CERTIFICATIONS_DETAILED } from "@/constants/data";
+import { CERTIFICATIONS_DETAILED } from "@/constants/data";
 
-type Certification = (typeof CERTIFICATIONS_DETAILED)[number];
-
+type Certification = {
+  id: string;
+  name: string;
+  issuer: string;
+  year: string;
+  logo: "microsoft" | "aws" | "cisco" | "infosys";
+  fileUrl: string;
+};
 interface CertificateModalProps {
   certification: Certification | null;
   onClose: () => void;

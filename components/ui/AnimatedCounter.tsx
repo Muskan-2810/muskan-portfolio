@@ -18,8 +18,8 @@ export default function AnimatedCounter({ value, className }: AnimatedCounterPro
   const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
 
   const match = value.match(/^(\d+)(.*)$/);
-  const numeric = match ? parseInt(match[1], 10) : null;
-  const suffix = match ? match[2] : "";
+const numeric = match?.[1] ? parseInt(match[1], 10) : null;
+const suffix = match?.[2] ?? "";
 
   const [display, setDisplay] = useState(numeric === null ? value : "0" + suffix);
 

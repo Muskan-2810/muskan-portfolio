@@ -2,7 +2,7 @@
 
 import { Suspense, useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Float, Environment, ContactShadows } from "@react-three/drei";
+import { Float, Environment, ContactShadows, PerspectiveCamera } from "@react-three/drei";
 import { EffectComposer, Bloom, Vignette } from "@react-three/postprocessing";
 import * as THREE from "three";
 import { lerp } from "@/lib/utils";
@@ -201,9 +201,17 @@ function Lighting() {
 
 function ResponsiveCamera() {
   const { viewport } = useThree();
+
   // Slightly pull back on narrow viewports so the whole rig stays in frame.
   const z = viewport.width < 6 ? 9 : 7;
-  return <perspectiveCamera makeDefault position={[0, 0, z]} fov={45} />;
+
+  return (
+    <PerspectiveCamera
+      makeDefault
+      position={[0, 0, z]}
+      fov={45}
+    />
+  );
 }
 
 export default function AIRobotScene() {

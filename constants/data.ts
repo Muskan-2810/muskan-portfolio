@@ -51,6 +51,7 @@ export const JOURNEY = [
     title: "Started B.Tech CSE (AI & ML)",
     description:
       "Walked into my first semester not fully sure what 'AI & ML' would mean day to day — just sure I wanted to build things, not just study them.",
+    isFuture: false,
   },
   {
     id: "java",
@@ -58,6 +59,7 @@ export const JOURNEY = [
     title: "Started learning Java",
     description:
       "Picked Java as my first serious language. The strictness annoyed me at first, then became the thing I trusted most about it.",
+    isFuture: false,
   },
   {
     id: "backend",
@@ -65,6 +67,7 @@ export const JOURNEY = [
     title: "Built first backend projects",
     description:
       "Moved from syntax exercises to actual services — routes, databases, things that could break in interesting ways. This is where it started feeling like engineering.",
+    isFuture: false,
   },
   {
     id: "cp",
@@ -72,6 +75,7 @@ export const JOURNEY = [
     title: "Competitive Programming",
     description:
       "Started solving problems daily, not for the ranking, but because it rewired how I think about complexity before I write a single line.",
+    isFuture: false,
   },
   {
     id: "hackathons",
@@ -79,6 +83,7 @@ export const JOURNEY = [
     title: "Hackathons",
     description:
       "Traded solo problem-sets for team sprints — tight deadlines, shared whiteboards, and the first taste of shipping something under pressure.",
+    isFuture: false,
   },
   {
     id: "pragati",
@@ -86,6 +91,7 @@ export const JOURNEY = [
     title: "Infosys Pragati Selection",
     description:
       "Selected for Infosys' Pragati program — a signal that the discipline was starting to show in ways beyond my own judgment of it.",
+    isFuture: false,
   },
   {
     id: "certifications",
@@ -93,6 +99,7 @@ export const JOURNEY = [
     title: "Google & AWS Certifications",
     description:
       "Formalized what I'd been piecing together — Generative AI and Cloud Computing — to close gaps between what I could build and what I understood.",
+    isFuture: false,
   },
   {
     id: "ai-projects",
@@ -100,6 +107,7 @@ export const JOURNEY = [
     title: "Current AI Projects",
     description:
       "Building Grovio and other ML-backed systems now — the shift from 'learning AI' to 'shipping AI' is the one I'm most proud of.",
+    isFuture: false,
   },
   {
     id: "future",
@@ -110,7 +118,6 @@ export const JOURNEY = [
     isFuture: true,
   },
 ] as const;
-
 // Real, verified skill set only — grouped exactly as provided, no fabricated
 // technologies. Accent colors rotate through the palette for visual identity
 // per category without implying any ranking.

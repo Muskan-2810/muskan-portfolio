@@ -88,19 +88,19 @@ export default function Journey() {
               >
                 {/* Node dot */}
                 <span
-                  className={cn(
-                    "absolute left-0 top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full border-2 border-glow-blue bg-void md:left-auto",
-                    isLeft ? "md:-right-1.5 md:translate-x-1/2" : "md:-left-1.5 md:-translate-x-1/2",
-                    milestone.isFuture && "border-glow-violet"
-                  )}
-                />
+  className={cn(
+    "absolute left-0 top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full border-2 border-glow-blue bg-void md:left-auto",
+    isLeft ? "md:-right-1.5 md:translate-x-1/2" : "md:-left-1.5 md:-translate-x-1/2",
+    milestone.isFuture === true && "border-glow-violet"
+  )}
+/>
 
-                <div
-                  className={cn(
-                    "glass-panel inline-block w-full max-w-md rounded-2xl p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-glow",
-                    milestone.isFuture && "border-glow-violet/30 hover:shadow-glow-violet"
-                  )}
-                >
+<div
+  className={cn(
+    "glass-panel inline-block w-full max-w-md rounded-2xl p-6 transition-all duration-500 hover:-translate-y-1 hover:shadow-glow",
+    milestone.isFuture === true && "border-glow-violet/30 hover:shadow-glow-violet"
+  )}
+>
                   <p className="font-mono text-xs uppercase tracking-widest text-glow-blue">
                     {milestone.year}
                   </p>

@@ -38,7 +38,7 @@ export default function Hero() {
     let timeoutId: ReturnType<typeof setTimeout>;
 
     const tick = () => {
-      const currentRole = PROFILE.roles[roleIndex];
+      const currentRole = PROFILE.roles[roleIndex]?? "";
       if (!deleting) {
         charIndex++;
         setTyped(currentRole.slice(0, charIndex));

@@ -98,7 +98,7 @@ function StarLayer({
         <bufferAttribute attach="attributes-aScale" args={[scales, 1]} />
         <bufferAttribute attach="attributes-aTwinkleOffset" args={[twinkleOffsets, 1]} />
       </bufferGeometry>
-      {/* @ts-expect-error custom shader material registered via extend() */}
+     
       <starMaterial
         ref={materialRef}
         uColor={new THREE.Color(color)}
