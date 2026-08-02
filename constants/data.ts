@@ -341,7 +341,7 @@ export const NAV_LINKS = [
 ] as const;
 
 // Replace with the real hosted resume PDF path once available (e.g. in /public).
-export const RESUME_URL = "/resume-muskan-vishwakarma.pdf";
+export const RESUME_URL = "/resume.pdf";
 
 // Boot-sequence lines shown by the loader — reinforces the "entering an AI
 // universe" framing from the very first frame.
